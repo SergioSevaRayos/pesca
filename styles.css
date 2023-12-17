@@ -1,0 +1,286 @@
+body {
+    font-family: 'Preahvihear', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: blue;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-image: url('ruta/de/tu/imagen/de/fondo.jpg');
+
+}
+
+header>img {
+    height: 120px;
+    position: fixed;
+    top: 50px;
+    transition: top 0.3s ease;
+}
+
+.fondoHeader {
+    height: 200px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+main {
+    padding: 20px;
+}
+
+.tarjetas {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+}
+.tarjetas > a{
+    text-decoration: none;
+    text-shadow: 2px 2px #000000;
+}
+
+.tarjeta {
+    width: 1hr;
+    margin: 10px;
+    padding: 15px;
+    background-color: rgb(10, 0, 97);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.tarjeta-especies {
+    width: 1hr;
+    height: 200px;
+    margin: 10px;
+    padding: 15px;
+    background-image: url(media/img/fondoTarjetaEspecies.jpg);
+    color: #ffcc00;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+}
+.tarjeta-eventos {
+    width: 1hr;
+    height: 200px;
+    margin: 10px;
+    padding: 15px;
+    background-image: url(media/img/fondoTarjetaEventos.jpg);
+    color: #ffcc00;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+}
+.tarjetas  h1{
+    font-size: 70px;
+    
+}
+
+.tarjeta a {
+    text-decoration: none;
+    color: #ffcc00;
+}
+
+.tarjeta img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 90px;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+    background-color: #ffcc00;
+    border-bottom: 1px solid rgb(10, 0, 97);
+    
+}
+
+th {
+    background-color: #444;
+    color: #ffcc00;
+}
+
+tr:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.main-especies{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.sargo {
+    background-image: url(media/img/sargo.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffcc00;
+    background-color: black;
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ffcc00;
+    border-radius: 8px;
+}
+
+.lubina {
+    background-image: url(media/img/lubina.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffcc00;
+    background-color: black;
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ffcc00;
+    border-radius: 8px;
+}
+.dorada {
+    background-image: url(media/img/dorada.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffcc00;
+    background-color: black;
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ffcc00;
+    border-radius: 8px;
+}
+.baila {
+    background-image: url(media/img/baila.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffcc00;
+    background-color: black;
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ffcc00;
+    border-radius: 8px;
+}
+.robalo {
+    background-image: url(media/img/robalo.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffcc00;
+    background-color: black;
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ffcc00;
+    border-radius: 8px;
+}
+
+
+
+/* Agrega el siguiente estilo al final de tu archivo styles.css */
+section#contacto {
+    margin-bottom: 160px;
+    /* Puedes ajustar este valor según sea necesario */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding-top: 1px;
+    padding-bottom: 30px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 20px;
+}
+
+
+@media only screen and (max-width: 767px) {
+    header {
+        flex-direction: column;
+    }
+    .main-especies {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: space-around;
+        flex-wrap: wrap;
+    }
+}
