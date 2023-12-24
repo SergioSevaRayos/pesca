@@ -10,13 +10,13 @@ particlesJS('background-container', {
             }
         },
         color: {
-            value: '#3498db'  // Color de las partículas
+            value: '#fff'  // Color de las partículas
         },
         shape: {
-            type: 'triangle',  // Tipo de forma (círculo, triángulo, etc.)
+            type: 'circle',  // Tipo de forma (círculo, triángulo, etc.)
             stroke: {
                 width: 1,
-                color: 'cornflowerblue'
+                color: 'white'
             },
             polygon: {
                 nb_sides: 9
@@ -45,9 +45,9 @@ particlesJS('background-container', {
         line_linked: {
             enable: true,
             distance: 150,
-            color: '#ffcc00',
-            opacity: 0.3,
-            width: 1
+            color: 'white',
+            opacity: 0,
+            width: 0
         },
         move: {
             enable: true,
@@ -124,4 +124,77 @@ window.addEventListener('scroll', actualizarPosicion);
 
 // Llama a la función una vez al cargar la página para establecer la posición inicial
 actualizarPosicion();
+//---------------------------------------------------> FIN
+
+//---------------------------------------------------> INICIO
+document.addEventListener("DOMContentLoaded", function () {
+    // Obtener la fecha actual
+    var fecha = new Date();
+    // Obtener el mes actual (0-11)
+    var mes = fecha.getMonth();
+
+    // Definir las especies para cada temporada
+    var especiesPorTemporada = {
+        verano: [
+            { nombre: "Dorada", imagen: "media/img/dorada.png" },
+            { nombre: "Especie2_Verano", imagen: "ruta/imagen2_verano.jpg" }
+        ],
+        otono: [
+            { nombre: "Sargo", imagen: "media/img/sargo.png" },
+            { nombre: "Palometón", imagen: "media/img/palometón.png" },
+            { nombre: "Lubina", imagen: "media/img/lubina.png" },
+            { nombre: "Dentón", imagen: "media/img/denton.png" },
+            { nombre: "Dorada", imagen: "media/img/dorada.png" },
+            { nombre: "Corvina", imagen: "media/img/corvina.png" }
+        ],
+        invierno: [
+            { nombre: "Lubina", imagen: "media/img/lubina.png" },
+            { nombre: "Róbalo", imagen: "media/img/robalo.png" },
+            { nombre: "Herrera", imagen: "media/img/herrera.png" },
+            { nombre: "Corvina", imagen: "media/img/corvina.png" }
+        ],
+        primavera: [
+            { nombre: "Corvina", imagen: "media/img/corvina.png" },
+            { nombre: "Lubina", imagen: "media/img/lubina.png" },
+            { nombre: "Palometa", imagen: "media/img/palometón.png" },
+            { nombre: "Dentón", imagen: "media/img/denton.png" }
+        ]
+    };
+
+    // Seleccionar el elemento de la sección de temporadas
+    var temporadasSection = document.getElementById("temporadasSection");
+
+    // Función para actualizar el contenido de la sección de temporadas
+    function actualizarContenidoTemporadas(temporada) {
+        // Limpiar el contenido existente
+        temporadasSection.innerHTML = "";
+
+        // Crear elementos para cada especie y agregarlos a la sección
+        especiesPorTemporada[temporada].forEach(function (especie) {
+            var imgEspecie = document.createElement("img");
+            imgEspecie.src = especie.imagen;
+            imgEspecie.alt = especie.nombre;
+
+            var pNombreEspecie = document.createElement("p");
+            pNombreEspecie.textContent = especie.nombre;
+
+            var divEspecie = document.createElement("div");
+            divEspecie.appendChild(imgEspecie);
+            divEspecie.appendChild(pNombreEspecie);
+
+            temporadasSection.appendChild(divEspecie);
+        });
+    }
+
+    // Determinar la temporada actual
+    if (mes >= 3 && mes <= 5) { // Primavera (meses 3, 4, 5)
+        actualizarContenidoTemporadas("primavera");
+    } else if (mes >= 6 && mes <= 8) { // Verano (meses 6, 7, 8)
+        actualizarContenidoTemporadas("verano");
+    } else if (mes >= 9 && mes <= 11) { // Otoño (meses 9, 10, 11)
+        actualizarContenidoTemporadas("otono");
+    } else { // Invierno (meses 0, 1, 2)
+        actualizarContenidoTemporadas("invierno");
+    }
+});
 //---------------------------------------------------> FIN

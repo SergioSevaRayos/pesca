@@ -1,51 +1,88 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="media/img/favicon.png" sizes="16x16" type="image/x-icon">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Preahvihear&display=swap" rel="stylesheet">
-    <!-- Librería para el fondo -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <link rel="stylesheet" href="styles.css">
-    <title>Inicio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="media/img/favicon.png" sizes="16x16" type="image/x-icon">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Preahvihear&display=swap" rel="stylesheet">
+  <!-- Librería para el fondo -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <title>Inicio</title>
 </head>
+
 <body>
-    <div class="cabecera">
-        <div class="fondoHeader" id="background-container">
+  <div class="cabecera">
+    <div class="fondoHeader" id="background-container">
 
-        </div>
-        <div class="header">
-            <header>
-                <img src="media/img/GRUPO.png" alt="">
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="eventos.html">Eventos</a></li>
-                        <li><a href="galeria.html">Galería</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                    </ul>
-                </nav>
-            </header>
-        </div>
-        
+    </div>
+    <div class="header">
+      <header>
+        <img src="media/img/GRUPO.png" alt="">
+        <nav>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="especies.html">Espsecies</a></li>
+            <li><a href="aparejos.html">Aparejos</a></li>
+            <li><a href="eventos.html">Eventos</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="tienda.html">Tienda</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        </nav>
+      </header>
     </div>
 
-    <div class="main">
-        <main>
+  </div>
 
-        </main>
-    </div>
+  <div class="main">
+    <main>
+      <div id="cuadroPesca">
+        <h2 style="color:#ffcc00">Sargo</h2>
+        <img src="media/img/sargo.png" style="height: 200px" alt="media/img/sargo.jpg">
+        <table class="tabla-especie">
+          <tr>
+            <th>Cuando</th>
+            <td>Otoño</td>
+          </tr>
+          <tr>
+            <th>Lugar</th>
+            <td>Fondos rocosos, aguas turbias de color oscuro y agitadas.</td>
+          </tr>
+          <tr>
+            <th>Cebo</th>
+            <td>Gusanos, camarones, crustáceos y moluscos</td>
+          </tr>
+          <!-- Agrega más columnas según sea necesario -->
+        </table>
+        <p>El sargo, una especie de pez común en aguas costeras, presenta características particulares tanto en sus
+          hábitos como en su morfología, haciendo de él un interesante objetivo para la pesca mediante la técnica del
+          surfcasting.
 
-    <div class="footer">
+          Morfológicamente, el sargo exhibe un cuerpo alargado, plateado y comprimido lateralmente, con una boca pequeña
+          equipada con dientes afilados. Su apariencia física lo adapta perfectamente a su entorno, especialmente en
+          zonas rocosas y fondos arenosos.
+
+          En cuanto a sus hábitos, el sargo tiende a habitar en aguas poco profundas, acercándose a la costa en busca de
+          alimento. Prefiere áreas con presencia de rocas, desembocaduras de ríos y zonas con algas marinas, donde
+          encuentra su principal fuente de alimento.
+
+          La pesca exitosa de sargos mediante el surfcasting requiere comprender sus hábitos alimenticios y la elección
+          estratégica del lugar. Su actividad alimenticia tiende a ser más intensa durante las mareas altas, y su
+          cautela implica una espera paciente para atraerlo al cebo.</p>
+      </div>
+
+      <div class="footer">
         <footer>
-            <p>&copy; 2023 Surfcasting Clávalo. Todos los derechos reservados.</p>
+          <p>&copy; 2023 Surfcasting Clávalo. Todos los derechos reservados.</p>
         </footer>
-    </div>
-    <script src="https://threejs.org/build/three.js"></script>
-    <script src="logica.js"></script>
+      </div>
+      <script src="https://threejs.org/build/three.js"></script>
+      <script src="logica.js"></script>
 </body>
+
 </html>
