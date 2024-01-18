@@ -65,6 +65,10 @@ main {
     flex-direction: column;
 }
 
+.main h2{
+    color: #ffcc00;
+}
+
 .temporadas {
     display: flex;
     flex-direction: row;

@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var especiesPorTemporada = {
         verano: [
             { nombre: "Dorada", imagen: "media/img/dorada.png" },
-            { nombre: "Especie2_Verano", imagen: "ruta/imagen2_verano.jpg" }
+            { nombre: "Lubina", imagen: "media/img/lubina.png" },
         ],
         otono: [
             { nombre: "Sargo", imagen: "media/img/sargo.png" },
