@@ -43,7 +43,7 @@ particlesJS('background-container', {
             }
         },
         line_linked: {
-            enable: true,
+            enable: false,
             distance: 150,
             color: 'white',
             opacity: 0,
@@ -52,7 +52,7 @@ particlesJS('background-container', {
         move: {
             enable: true,
             speed: 1,
-            direction: 'none',
+            direction: 'top', // Cambia 'none' a 'top'
             random: false,
             straight: false,
             out_mode: 'out',
@@ -68,7 +68,7 @@ particlesJS('background-container', {
         detect_on: 'canvas',
         events: {
             onhover: {
-                enable: true,
+                enable: false,
                 mode: 'repulse'
             },
             onclick: {
@@ -196,5 +196,23 @@ document.addEventListener("DOMContentLoaded", function () {
     } else { // Invierno (meses 0, 1, 2)
         actualizarContenidoTemporadas("invierno");
     }
+});
+//---------------------------------------------------> FIN
+//---------------------------------------------------> INICIO
+$(document).ready(function () {
+    // Configuración inicial del calendario
+    
+    $('#calendario').fullCalendar({
+        header: {
+            left: 'prev,next today',
+            center: 'title',
+            right: 'month,agendaWeek,agendaDay'
+            
+            
+        },
+        editable: false, // Para deshabilitar la edición de eventos
+        locale: 'es', // Establece el idioma del calendario a español
+
+    });
 });
 //---------------------------------------------------> FIN

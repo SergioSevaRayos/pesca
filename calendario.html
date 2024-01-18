@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,8 +12,10 @@
     <!-- Librería para el fondo -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css" />
     <title>Contacto</title>
 </head>
+
 <body>
     <div class="cabecera">
         <div class="fondoHeader" id="background-container">
@@ -35,10 +38,12 @@
                 </nav>
             </header>
         </div>
-        
+
     </div>
     <div class="main">
         <main>
+            <div id="calendario" class="calendario-container"></div>
+
 
         </main>
     </div>
@@ -49,6 +54,11 @@
         </footer>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@3.10.2/dist/fullcalendar.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@3.10.2/dist/fullcalendar.min.css" />
     <script src="logica.js"></script>
 </body>
+
 </html>
