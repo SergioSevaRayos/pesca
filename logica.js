@@ -199,20 +199,42 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 //---------------------------------------------------> FIN
 //---------------------------------------------------> INICIO
-$(document).ready(function () {
-    // Configuración inicial del calendario
-    
-    $('#calendario').fullCalendar({
-        header: {
-            left: 'prev,next today',
-            center: 'title',
-            right: 'month,agendaWeek,agendaDay'
-            
-            
-        },
-        editable: false, // Para deshabilitar la edición de eventos
-        locale: 'es', // Establece el idioma del calendario a español
+document.addEventListener('DOMContentLoaded', function () {
+    var calendarEl = document.getElementById('calendario');
+    var scene1Container = document.getElementById('scene1');
 
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'dayGridMonth',
+        locale: 'es',
+        firstDay: 1,
+        selectable: true,
+        select: function (info) {
+            // No hacemos nada cuando se selecciona una fecha
+        },
+        dayRender: function (info) {
+            // Verificamos si la fecha es el 1 de enero de 2024
+            if (info.date.toISOString().split('T')[0] === '2024-01-01') {
+                // Mostramos el contenido en scene1Container
+                scene1Container.innerHTML = 'Contenido para el 1 de enero de 2024';
+            }
+        }
     });
+
+    calendar.render();
 });
+//---------------------------------------------------> FIN
+//---------------------------------------------------> INICIO
+// Inicializar Glide.js con carrusel infinito
+new Glide('.glide', {
+    type: 'carousel',
+    startAt: 0,
+    perView: 4,
+    breakpoints: {
+        768: {
+            perView: 2 // Mostrar solo 1 elemento en pantallas menores a 768px
+        }
+    },
+    bound: true, // Hacer el carrusel infinito
+    rewind: false // Hacer que el carrusel rebobine al final o al principio cuando llega al final o al principio
+}).mount()
 //---------------------------------------------------> FIN

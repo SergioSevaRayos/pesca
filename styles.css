@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgb(1, 0, 20);
+    overflow-x: hidden;
 }
 
 header {
@@ -11,7 +12,6 @@ header {
     align-items: center;
     flex-direction: row;
     background-image: url('ruta/de/tu/imagen/de/fondo.jpg');
-
 }
 
 header>img {
@@ -65,7 +65,7 @@ main {
     flex-direction: column;
 }
 
-.main h2{
+.main h2 {
     color: #ffcc00;
 }
 
@@ -233,11 +233,8 @@ main {
     border-radius: 4px;
 }
 
-.calendario-container {
-    margin: 100px;
-    color: red;
 
-}
+
 /* Agrega estos estilos al final de tu archivo styles.css o en un nuevo archivo de estilos */
 
 
@@ -441,7 +438,7 @@ footer {
     header {
         flex-direction: column;
     }
-
+    
     .main-especies {
         display: flex;
         flex-direction: column;

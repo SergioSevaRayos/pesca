@@ -1,0 +1,25 @@
+x	sargo (diplodus sargus)
+	esparral (diplodus annularis)
+	vidriada (diplodus vulgaris)
+	morruda (diplodus puntozzo)
+	sargo imperial (diplodus cervinus)
+
+	mabre/herrera (lithognathus mormyrus)
+	cantera (Spondyliosoma cantharus)
+	oblada (oblada melanura)
+	boga (boops boops)
+	dorada (sparus aurata)	
+
+	dentón (dentex dentex)
+	besugo (pagellus bogaraveo)
+	pargo (pargus pargus)
+	pagel/breca (pagellus erythrinus)
+	salema(sarpa salpa)
+	congrio (conger conger)
+	chucla (spicara maena)
+	morena (muraena helena)
+	mero (Cephalopholis argus)
+	lubina (Dicentrarchus labrax)
+	gorfal
+	anjova
+	palomentón 
