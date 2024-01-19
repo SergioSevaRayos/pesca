@@ -138,6 +138,8 @@ document.addEventListener("DOMContentLoaded", function () {
         verano: [
             { nombre: "Dorada", imagen: "media/img/dorada.png" },
             { nombre: "Lubina", imagen: "media/img/lubina.png" },
+            { nombre: "Herrera", imagen: "media/img/herrera.png" },
+            { nombre: "Raspallón", imagen: "media/img/raspallon.png" }
         ],
         otono: [
             { nombre: "Sargo", imagen: "media/img/sargo.png" },
@@ -155,6 +157,8 @@ document.addEventListener("DOMContentLoaded", function () {
         ],
         primavera: [
             { nombre: "Corvina", imagen: "media/img/corvina.png" },
+            { nombre: "Herrera", imagen: "media/img/herrera.png" },
+            { nombre: "Raspallón", imagen: "media/img/raspallon.png" },
             { nombre: "Lubina", imagen: "media/img/lubina.png" },
             { nombre: "Palometa", imagen: "media/img/palometón.png" },
             { nombre: "Dentón", imagen: "media/img/denton.png" }

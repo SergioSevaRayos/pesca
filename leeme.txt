@@ -1,8 +1,9 @@
 x	sargo (diplodus sargus)
-	esparral (diplodus annularis)
-	vidriada (diplodus vulgaris)
-	morruda (diplodus puntozzo)
-	sargo imperial (diplodus cervinus)
+x	lubina (Dicentrarchus labrax)
+x   raspallón/esparral (diplodus annularis)
+x	vidriada/mojarra (diplodus vulgaris)
+x	sargo picudo/morruda (diplodus puntozzo)
+x	sargo imperial (diplodus cervinus)
 
 	mabre/herrera (lithognathus mormyrus)
 	cantera (Spondyliosoma cantharus)
@@ -19,7 +20,6 @@ x	sargo (diplodus sargus)
 	chucla (spicara maena)
 	morena (muraena helena)
 	mero (Cephalopholis argus)
-	lubina (Dicentrarchus labrax)
-	gorfal
-	anjova
-	palomentón 
+	
+	anjova/golfal (Pomatomus saltatrix)
+	palomentón (Lichia Amia)

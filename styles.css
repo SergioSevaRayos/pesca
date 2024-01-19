@@ -5,7 +5,9 @@ body {
     background-color: rgb(1, 0, 20);
     overflow-x: hidden;
 }
-
+a{
+    text-decoration: none;
+}
 header {
     display: flex;
     justify-content: center;
@@ -380,6 +382,77 @@ tr:hover {
     border: 1px solid #ffcc00;
     border-radius: 8px;
 }
+.raspallon {
+    background-image: url(media/img/raspallon.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffcc00;
+    background-color: black;
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ffcc00;
+    border-radius: 8px;
+}
+.vidriada {
+    background-image: url(media/img/vidriada.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffcc00;
+    background-color: black;
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ffcc00;
+    border-radius: 8px;
+}
+.sargoPicudo {
+    background-image: url(media/img/sargoPicudo.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffcc00;
+    background-color: black;
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ffcc00;
+    border-radius: 8px;
+}
+.sargoImperial {
+    background-image: url(media/img/sargoImperial.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffcc00;
+    background-color: black;
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ffcc00;
+    border-radius: 8px;
+}
+.herrera {
+    background-image: url(media/img/herrera.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffcc00;
+    background-color: black;
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ffcc00;
+    border-radius: 8px;
+}
+
 
 .baila {
     background-image: url(media/img/baila.png);
