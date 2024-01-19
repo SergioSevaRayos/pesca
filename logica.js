@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Definir las especies para cada temporada
     var especiesPorTemporada = {
         verano: [
-            { nombre: "Dorada", imagen: "media/img/dorada.png" },
+            { nombre: "Dorada", imagen: "media/img/dorada.png",},
             { nombre: "Lubina", imagen: "media/img/lubina.png" },
             { nombre: "Herrera", imagen: "media/img/herrera.png" },
             { nombre: "Raspallón", imagen: "media/img/raspallon.png" }
@@ -150,7 +150,7 @@ document.addEventListener("DOMContentLoaded", function () {
             { nombre: "Corvina", imagen: "media/img/corvina.png" }
         ],
         invierno: [
-            { nombre: "Lubina", imagen: "media/img/lubina.png" },
+            { nombre: "Lubina", imagen: "media/img/lubina.png"},
             { nombre: "Róbalo", imagen: "media/img/robalo.png" },
             { nombre: "Herrera", imagen: "media/img/herrera.png" },
             { nombre: "Corvina", imagen: "media/img/corvina.png" }
