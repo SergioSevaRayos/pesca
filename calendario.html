@@ -40,24 +40,97 @@
         </div>
 
     </div>
-    <div class="main">
-        <main>
-            <div id="calendario" class="calendario-container"></div>
-
-
-        </main>
+    <div></div>
+    <div id="miDiv">
+        <p id="texto"></p>
     </div>
 
+    <div id="TT_Calendario_000000l1n">Calendario fases lunares - Tutiempo.net</div>
+
+    <script src="https://www.tutiempo.net/s-widget/moon/000000l1n.js"></script>
     <div class="footer">
         <footer>
             <p>&copy; 2023 Surfcasting Clávalo. Todos los derechos reservados.</p>
         </footer>
     </div>
+    <script src="https://www.tutiempo.net/s-widget/moon/000000l1n.js"></script>
+    <script>
+        // Definir las fechas y colores correspondientes
+        const fechasColores = [
+            // Semanas "Buenas" para pescar
+            { inicio: new Date('2024-01-04'), fin: new Date('2024-01-10'), color: 'blue', texto: 'Calidad buena' },//enero
+            { inicio: new Date('2024-02-02'), fin: new Date('2024-02-08'), color: 'blue', texto: 'Calidad buena' },//febrero
+            { inicio: new Date('2024-03-03'), fin: new Date('2024-03-09'), color: 'blue', texto: 'Calidad buena' },//marzo
+            { inicio: new Date('2024-04-02'), fin: new Date('2024-04-07'), color: 'blue', texto: 'Calidad buena' },//abril
+            { inicio: new Date('2024-05-01'), fin: new Date('2024-05-07'), color: 'blue', texto: 'Calidad buena' },//mayo
+            { inicio: new Date('2024-06-01'), fin: new Date('2024-06-05'), color: 'blue', texto: 'Calidad buena' },//junio
+            { inicio: new Date('2024-06-28'), fin: new Date('2024-07-04'), color: 'blue', texto: 'Calidad buena' },//junio-julio
+            { inicio: new Date('2024-07-27'), fin: new Date('2024-08-03'), color: 'blue', texto: 'Calidad buena' },//julio-agosto
+            { inicio: new Date('2024-08-26'), fin: new Date('2024-09-01'), color: 'blue', texto: 'Calidad buena' },//agosto-septiembre
+            { inicio: new Date('2024-09-24'), fin: new Date('2024-10-01'), color: 'blue', texto: 'Calidad buena' },//septiembre-octubre
+            { inicio: new Date('2024-10-24'), fin: new Date('2024-10-31'), color: 'blue', texto: 'Calidad buena' },//octubre
+            { inicio: new Date('2024-11-22'), fin: new Date('2024-11-30'), color: 'blue', texto: 'Calidad buena' },//noviembre
+            { inicio: new Date('2024-12-22'), fin: new Date('2024-12-29'), color: 'blue', texto: 'Calidad buena' },//diciembre
+            // Semanas "Óptimas" para pescar
+            { inicio: new Date('2024-01-11'), fin: new Date('2024-01-17'), color: '#09ff00', texto: 'Calidad óptima' },//enero
+            { inicio: new Date('2024-02-09'), fin: new Date('2024-02-15'), color: '#09ff00', texto: 'Calidad óptima' },//febrero
+            { inicio: new Date('2024-03-10'), fin: new Date('2024-03-16'), color: '#09ff00', texto: 'Calidad óptima' },//marzo
+            { inicio: new Date('2024-04-08'), fin: new Date('2024-04-14'), color: '#09ff00', texto: 'Calidad óptima' },//abril
+            { inicio: new Date('2024-05-08'), fin: new Date('2024-05-14'), color: '#09ff00', texto: 'Calidad óptima' },//mayo
+            { inicio: new Date('2024-06-06'), fin: new Date('2024-06-13'), color: '#09ff00', texto: 'Calidad óptima' },//junio
+            { inicio: new Date('2024-07-05'), fin: new Date('2024-07-12'), color: '#09ff00', texto: 'Calidad óptima' },//julio
+            { inicio: new Date('2024-08-04'), fin: new Date('2024-08-11'), color: '#09ff00', texto: 'Calidad óptima' },//agosto
+            { inicio: new Date('2024-09-02'), fin: new Date('2024-09-10'), color: '#09ff00', texto: 'Calidad óptima' },//septiembre
+            { inicio: new Date('2024-10-02'), fin: new Date('2024-10-09'), color: '#09ff00', texto: 'Calidad óptima' },//octubre
+            { inicio: new Date('2024-11-01'), fin: new Date('2024-11-08'), color: '#09ff00', texto: 'Calidad óptima' },//noviembre
+            { inicio: new Date('2024-12-01'), fin: new Date('2024-12-07'), color: '#09ff00', texto: 'Calidad óptima' },//diciembre
+            { inicio: new Date('2024-12-30'), fin: new Date('2024-12-31'), color: '#09ff00', texto: 'La mejor noche' },//diciembre
+            // Semanas "Regulares" para pescar
+            { inicio: new Date('2024-01-18'), fin: new Date('2024-01-24'), color: '#ffcc00', texto: 'Calidad regular' },//enero
+            { inicio: new Date('2024-02-16'), fin: new Date('2024-02-23'), color: '#ffcc00', texto: 'Calidad regular' },//febrero
+            { inicio: new Date('2024-03-17'), fin: new Date('2024-03-24'), color: '#ffcc00', texto: 'Calidad regular' },//marzo
+            { inicio: new Date('2024-04-15'), fin: new Date('2024-04-22'), color: '#ffcc00', texto: 'Calidad regular' },//abril
+            { inicio: new Date('2024-05-15'), fin: new Date('2024-05-22'), color: '#ffcc00', texto: 'Calidad regular' },//mayo
+            { inicio: new Date('2024-06-14'), fin: new Date('2024-06-20'), color: '#ffcc00', texto: 'Calidad regular' },//junio
+            { inicio: new Date('2024-07-13'), fin: new Date('2024-07-20'), color: '#ffcc00', texto: 'Calidad regular' },//julio
+            { inicio: new Date('2024-08-12'), fin: new Date('2024-08-18'), color: '#ffcc00', texto: 'Calidad regular' },//agosto
+            { inicio: new Date('2024-09-11'), fin: new Date('2024-09-16'), color: '#ffcc00', texto: 'Calidad regular' },//septiembre
+            { inicio: new Date('2024-10-10'), fin: new Date('2024-10-16'), color: '#ffcc00', texto: 'Calidad regular' },//octubre
+            { inicio: new Date('2024-11-10'), fin: new Date('2024-11-14'), color: '#ffcc00', texto: 'Calidad regular' },//noviembre
+            { inicio: new Date('2024-12-08'), fin: new Date('2024-12-14'), color: '#ffcc00', texto: 'Calidad regular' },//diciembre
+            // Semanas "Malas" para pescar
+            { inicio: new Date('2024-01-25'), fin: new Date('2024-02-01'), color: '#9900ff', texto: 'Calidad mala' },//enero
+            { inicio: new Date('2024-02-24'), fin: new Date('2024-03-02'), color: '#9900ff', texto: 'Calidad mala' },//febrero
+            { inicio: new Date('2024-03-25'), fin: new Date('2024-04-01'), color: '#9900ff', texto: 'Calidad mala' },//marzo
+            { inicio: new Date('2024-04-23'), fin: new Date('2024-04-30'), color: '#9900ff', texto: 'Calidad mala' },//abril
+            { inicio: new Date('2024-05-23'), fin: new Date('2024-05-29'), color: '#9900ff', texto: 'Calidad mala' },//mayo
+            { inicio: new Date('2024-06-21'), fin: new Date('2024-06-27'), color: '#9900ff', texto: 'Calidad mala' },//junio
+            { inicio: new Date('2024-07-21'), fin: new Date('2024-07-26'), color: '#9900ff', texto: 'Calidad mala' },//julio
+            { inicio: new Date('2024-08-19'), fin: new Date('2024-08-25'), color: '#9900ff', texto: 'Calidad mala' },//agosto
+            { inicio: new Date('2024-09-17'), fin: new Date('2024-09-23'), color: '#9900ff', texto: 'Calidad mala' },//septiembre
+            { inicio: new Date('2024-10-17'), fin: new Date('2024-10-23'), color: '#9900ff', texto: 'Calidad mala' },//octubre
+            { inicio: new Date('2024-11-15'), fin: new Date('2024-11-21'), color: '#9900ff', texto: 'Calidad mala' },//noviembre
+            { inicio: new Date('2024-12-15'), fin: new Date('2024-12-21'), color: '#9900ff', texto: 'Calidad mala' },//diciembre
+        ];
 
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@3.10.2/dist/fullcalendar.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@3.10.2/dist/fullcalendar.min.css" />
+
+        // Obtener el elemento div y el párrafo de texto
+        const miDiv = document.getElementById('miDiv');
+        const textoElemento = document.getElementById('texto');
+
+        // Obtener la fecha actual
+        const fechaActual = new Date();
+
+        // Iterar sobre las fechas y verificar si la fecha actual está dentro del rango
+        for (const { inicio, fin, color, texto } of fechasColores) {
+            if (fechaActual >= inicio && fechaActual <= fin) {
+                // Si la fecha está dentro del rango, establecer el color del div y el texto
+                miDiv.style.backgroundColor = color;
+                textoElemento.textContent = texto;
+                break; // Terminar el bucle una vez que se encuentra un rango coincidente
+            }
+        }
+    </script>
     <script src="logica.js"></script>
 </body>
 
