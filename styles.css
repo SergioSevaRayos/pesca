@@ -295,7 +295,7 @@ table {
 
 }
 #cuadroPesca img{
-    height: 250px;
+    height: 180px;
 }
 
 #cuadroPesca p {
@@ -541,9 +541,8 @@ footer {
 
 #texto {
     position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    padding-top: 10px;
+    padding-left: 20px;
     color: black;
     font-size: 18px;
     font-weight: bold;
