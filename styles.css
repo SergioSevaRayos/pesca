@@ -287,11 +287,15 @@ table {
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 .tabla-especie {
-    width: 50%;
+    width: auto;
 
+}
+#cuadroPesca img{
+    height: 250px;
 }
 
 #cuadroPesca p {
@@ -551,6 +555,9 @@ footer {
     }
     .tabla-especies-general {
         margin-top: 0px;
+    }
+    #cuadroPesca > img{
+        height: 141px;
     }
 
     .main-especies {
