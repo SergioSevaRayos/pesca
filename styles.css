@@ -549,6 +549,9 @@ footer {
     header {
         flex-direction: column;
     }
+    .tabla-especies-general {
+        margin-top: 0px;
+    }
 
     .main-especies {
         display: flex;
